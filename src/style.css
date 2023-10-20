@@ -104,6 +104,7 @@ header {
 
 .description ol {
     width: 50%;
+    margin-left: -40px;
 }
 
 .food {
