@@ -3,6 +3,7 @@ import generateHome from './home.js';
 import generateMenu from './menu.js';
 import generateContact from './contacts.js';
 import Restaurant from './restaurant.jpg';
+import Favicon from './favicon.svg';
 
 const content = document.getElementById('content');
 
