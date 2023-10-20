@@ -2,12 +2,12 @@ const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
-  mode: 'development',
+  mode: 'production',  // changed from development
   entry: {
     index: './src/index.js',
-    home: './src/home.js',
-    menu: './src/menu.js',
-    contacts: './src/contacts.js',
+    // home: './src/home.js',         // if left, each creates file in dist
+    // menu: './src/menu.js',
+    // contacts: './src/contacts.js',
   },
   devtool: 'inline-source-map',
   devServer: {
@@ -23,9 +23,9 @@ module.exports = {
     }),
   ],
   output: {
-    filename: '[name].bundle.js', //changed from 'main.js',
+    filename: 'main.js', //changed from '[name].bundle.js',
     path: path.resolve(__dirname, 'dist'),
-    clean: true,
+    // clean: true,         // deletes unused files in dist
   },
   module: {
     rules: [
@@ -39,7 +39,7 @@ module.exports = {
       },
     ],
   },
-  optimization: {
-    runtimeChunk: 'single',
-  },
+  // optimization: {              //creates runtime.bundle.js
+  //   runtimeChunk: 'single',
+  // },
 };

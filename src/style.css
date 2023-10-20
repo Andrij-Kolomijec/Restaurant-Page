@@ -67,7 +67,7 @@ header {
     color: antiquewhite;
     box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.7);
     backdrop-filter: blur(2px);
-    animation: fadeIn 1.5s;
+    /* animation: fadeIn 1.5s; */
 }
 
 .description > p {
